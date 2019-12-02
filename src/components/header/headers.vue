@@ -20,10 +20,11 @@
           <span class="icon"></span>
           <span class="text">{{ seller.supports[0].description }}</span>
         </div>
-        <div class="supports-count"
-             v-if="seller.supports">
-          <span class="count">{{seller.supports.length}}个</span>
-        </div>
+      </div>
+      <!-- 订单个数 -->
+      <div class="supports-count"
+           v-if="seller.supports">
+        <span class="count">{{seller.supports.length}}个</span>
       </div>
     </div>
     <div class="info-warpper">
@@ -51,7 +52,6 @@ export default {
   background: #999;
 }
 .content-warp {
-  display: inline-block;
   padding: 24px 12px 18px 24px;
   position: relative;
   font-size: 0;
@@ -66,7 +66,6 @@ export default {
   margin-left: 16px;
   font-size: 14px;
 }
-
 .title {
   margin: 2px 0 8px 0;
 }
@@ -107,12 +106,13 @@ export default {
 }
 .supports-count {
   position: absolute;
+  right: 12px;
+  bottom: 18px;
   padding: 0 8px;
   height: 24px;
   line-height: 24px;
   border-radius: 14px;
-  right: 12px;
-  bottom: 14px;
+
   background: #666;
   text-align: center;
 }
