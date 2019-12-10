@@ -1,8 +1,6 @@
-
 <template>
   <div id="app">
     <headerIndex :seller='seller'>我是头部</headerIndex>
-
     <div class="tabList border-1px">
       <div class="tab-item">
         <router-link to='/goods'

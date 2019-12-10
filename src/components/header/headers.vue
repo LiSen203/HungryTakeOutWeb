@@ -27,9 +27,9 @@
         <span class="count">{{seller.supports.length}}个</span>
       </div>
     </div>
+    <!-- 公告 -->
     <div class="info-warpper">
-      <span class="gonggao-title"></span>
-      <span class="gonggao-text">{{seller.bulletin}}</span>
+      <span class="gonggao-title"></span><span class="gonggao-text">{{seller.bulletin}}</span>
     </div>
   </div>
 </template>
@@ -112,11 +112,33 @@ export default {
   height: 24px;
   line-height: 24px;
   border-radius: 14px;
-
   background: #666;
   text-align: center;
 }
 .count {
   font-size: 10px;
+}
+.info-warpper {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 22px 0px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #4e545a;
+}
+.gonggao-title {
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  background: url(./bulletin@2x.png) no-repeat;
+  background-size: 22px 12px;
+  vertical-align: top;
+  margin-top: 9px;
+}
+.gonggao-text {
+  font-size: 10px;
+  font-weight: 200;
+  margin: 0 4px;
 }
 </style>
